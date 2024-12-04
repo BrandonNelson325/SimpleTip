@@ -1,0 +1,186 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/bnelson/PersonalDev/SimpleTip/platforms/ios/build/Debug-iphonesimulator/SimpleTip.app/SimpleTip'
+relocations:
+  - { offsetInCU: 0x27, offset: 0x804D8, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100004408, symSize: 0x2AC }
+  - { offsetInCU: 0x4F, offset: 0x80500, size: 0x8, addend: 0x0, symName: _nativescript, symObjAddr: 0x1500, symBinAddr: 0x100A27F98, symSize: 0x0 }
+  - { offsetInCU: 0x7C, offset: 0x8052D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100004408, symSize: 0x2AC }
+  - { offsetInCU: 0x124, offset: 0x805D5, size: 0x8, addend: 0x0, symName: ___main_block_invoke, symObjAddr: 0x2AC, symBinAddr: 0x1000046B4, symSize: 0x238 }
+  - { offsetInCU: 0x27, offset: 0x80766, size: 0x8, addend: 0x0, symName: '+[NativeScriptStart setup]', symObjAddr: 0x0, symBinAddr: 0x1000048EC, symSize: 0x26C }
+  - { offsetInCU: 0x4F, offset: 0x8078E, size: 0x8, addend: 0x0, symName: _nativescriptStart, symObjAddr: 0x1870, symBinAddr: 0x100A27FA0, symSize: 0x0 }
+  - { offsetInCU: 0x7C, offset: 0x807BB, size: 0x8, addend: 0x0, symName: '+[NativeScriptStart setup]', symObjAddr: 0x0, symBinAddr: 0x1000048EC, symSize: 0x26C }
+  - { offsetInCU: 0x120, offset: 0x8085F, size: 0x8, addend: 0x0, symName: '___26+[NativeScriptStart setup]_block_invoke', symObjAddr: 0x26C, symBinAddr: 0x100004B58, symSize: 0x238 }
+  - { offsetInCU: 0x177, offset: 0x808B6, size: 0x8, addend: 0x0, symName: '+[NativeScriptStart boot]', symObjAddr: 0x4A4, symBinAddr: 0x100004D90, symSize: 0x30 }
+  - { offsetInCU: 0x27, offset: 0x80A50, size: 0x8, addend: 0x0, symName: '+[NativeScriptEmbedder sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x100004DC0, symSize: 0x80 }
+  - { offsetInCU: 0x35, offset: 0x80A5E, size: 0x8, addend: 0x0, symName: '+[NativeScriptEmbedder sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x100004DC0, symSize: 0x80 }
+  - { offsetInCU: 0x5F, offset: 0x80A88, size: 0x8, addend: 0x0, symName: _sharedInstance.sharedInstance, symObjAddr: 0x1C80, symBinAddr: 0x100A27FC0, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x80A9E, size: 0x8, addend: 0x0, symName: _sharedInstance.onceToken, symObjAddr: 0x1C88, symBinAddr: 0x100A27FC8, symSize: 0x0 }
+  - { offsetInCU: 0x17E, offset: 0x80BA7, size: 0x8, addend: 0x0, symName: '___38+[NativeScriptEmbedder sharedInstance]_block_invoke', symObjAddr: 0x80, symBinAddr: 0x100004E40, symSize: 0x44 }
+  - { offsetInCU: 0x1A8, offset: 0x80BD1, size: 0x8, addend: 0x0, symName: '-[NativeScriptEmbedder setDelegate:]', symObjAddr: 0xC4, symBinAddr: 0x100004E84, symSize: 0x5C }
+  - { offsetInCU: 0x1EC, offset: 0x80C15, size: 0x8, addend: 0x0, symName: '-[NativeScriptEmbedder setWindowScene:]', symObjAddr: 0x120, symBinAddr: 0x100004EE0, symSize: 0x68 }
+  - { offsetInCU: 0x230, offset: 0x80C59, size: 0x8, addend: 0x0, symName: '+[NativeScriptEmbedder setup]', symObjAddr: 0x188, symBinAddr: 0x100004F48, symSize: 0x54 }
+  - { offsetInCU: 0x274, offset: 0x80C9D, size: 0x8, addend: 0x0, symName: '+[NativeScriptEmbedder boot]', symObjAddr: 0x1DC, symBinAddr: 0x100004F9C, symSize: 0x54 }
+  - { offsetInCU: 0x2B8, offset: 0x80CE1, size: 0x8, addend: 0x0, symName: '-[NativeScriptEmbedder delegate]', symObjAddr: 0x230, symBinAddr: 0x100004FF0, symSize: 0x1C }
+  - { offsetInCU: 0x2F1, offset: 0x80D1A, size: 0x8, addend: 0x0, symName: '-[NativeScriptEmbedder windowScene]', symObjAddr: 0x24C, symBinAddr: 0x10000500C, symSize: 0x1C }
+  - { offsetInCU: 0x32A, offset: 0x80D53, size: 0x8, addend: 0x0, symName: '-[NativeScriptEmbedder .cxx_destruct]', symObjAddr: 0x268, symBinAddr: 0x100005028, symSize: 0x48 }
+  - { offsetInCU: 0x27, offset: 0x80E49, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils getSystemFont:weight:italic:symbolicTraits:]', symObjAddr: 0x0, symBinAddr: 0x100005070, symSize: 0x10C }
+  - { offsetInCU: 0x6E, offset: 0x80E90, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils getSystemFont:weight:italic:symbolicTraits:]', symObjAddr: 0x0, symBinAddr: 0x100005070, symSize: 0x10C }
+  - { offsetInCU: 0xF2, offset: 0x80F14, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils createUIFont:]', symObjAddr: 0x10C, symBinAddr: 0x10000517C, symSize: 0x928 }
+  - { offsetInCU: 0x1DA, offset: 0x80FFC, size: 0x8, addend: 0x0, symName: ___CGAffineTransformMake, symObjAddr: 0xA34, symBinAddr: 0x100005AA4, symSize: 0x54 }
+  - { offsetInCU: 0x25E, offset: 0x81080, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils createMutableStringWithDetails:]', symObjAddr: 0xA88, symBinAddr: 0x100005AF8, symSize: 0x3CC }
+  - { offsetInCU: 0x2E7, offset: 0x81109, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils createMutableStringForSpan:font:color:backgroundColor:textDecoration:baselineOffset:]', symObjAddr: 0xE54, symBinAddr: 0x100005EC4, symSize: 0x300 }
+  - { offsetInCU: 0x38A, offset: 0x811AC, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils scaleImage:width:height:scaleFactor:]', symObjAddr: 0x1154, symBinAddr: 0x1000061C4, symSize: 0x140 }
+  - { offsetInCU: 0x40E, offset: 0x81230, size: 0x8, addend: 0x0, symName: _CGSizeMake, symObjAddr: 0x1294, symBinAddr: 0x100006304, symSize: 0x2C }
+  - { offsetInCU: 0x45A, offset: 0x8127C, size: 0x8, addend: 0x0, symName: _CGRectMake, symObjAddr: 0x12C0, symBinAddr: 0x100006330, symSize: 0x4C }
+  - { offsetInCU: 0x4C6, offset: 0x812E8, size: 0x8, addend: 0x0, symName: '+[NativeScriptUtils getImageData:format:quality:]', symObjAddr: 0x130C, symBinAddr: 0x10000637C, symSize: 0x13C }
+  - { offsetInCU: 0x27, offset: 0x813ED, size: 0x8, addend: 0x0, symName: '-[UIView(NativeScript) nativeScriptSetTextDecorationAndTransform:textDecoration:letterSpacing:lineHeight:]', symObjAddr: 0x0, symBinAddr: 0x1000064B8, symSize: 0x80C }
+  - { offsetInCU: 0x67, offset: 0x8142D, size: 0x8, addend: 0x0, symName: '-[UIView(NativeScript) nativeScriptSetTextDecorationAndTransform:textDecoration:letterSpacing:lineHeight:]', symObjAddr: 0x0, symBinAddr: 0x1000064B8, symSize: 0x80C }
+  - { offsetInCU: 0x164, offset: 0x8152A, size: 0x8, addend: 0x0, symName: '-[UIView(NativeScript) nativeScriptSetFormattedTextDecorationAndTransform:letterSpacing:lineHeight:]', symObjAddr: 0x80C, symBinAddr: 0x100006CC4, symSize: 0x488 }
+  - { offsetInCU: 0x22A, offset: 0x815F0, size: 0x8, addend: 0x0, symName: '-[UIView(NativeScript) nativeScriptSetFormattedTextStroke:color:]', symObjAddr: 0xC94, symBinAddr: 0x10000714C, symSize: 0x194 }
+  - { offsetInCU: 0x4B, offset: 0x816F2, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvpZ', symObjAddr: 0x13FC8, symBinAddr: 0x100A27FA8, symSize: 0x0 }
+  - { offsetInCU: 0x91, offset: 0x81738, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvgZTo', symObjAddr: 0xC00, symBinAddr: 0x100007EE0, symSize: 0x44 }
+  - { offsetInCU: 0x10D, offset: 0x817B4, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvgZTo', symObjAddr: 0xD28, symBinAddr: 0x100008008, symSize: 0x44 }
+  - { offsetInCU: 0x188, offset: 0x8182F, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvgTo', symObjAddr: 0xE68, symBinAddr: 0x100008148, symSize: 0x48 }
+  - { offsetInCU: 0x1E0, offset: 0x81887, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvsTo', symObjAddr: 0xF00, symBinAddr: 0x1000081E0, symSize: 0x64 }
+  - { offsetInCU: 0x256, offset: 0x818FD, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC11viewCreatorySScSgvsTo', symObjAddr: 0x1088, symBinAddr: 0x100008368, symSize: 0x94 }
+  - { offsetInCU: 0x2E4, offset: 0x8198B, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC13viewDestroyerySScSgvsTo', symObjAddr: 0x11B4, symBinAddr: 0x100008494, symSize: 0x94 }
+  - { offsetInCU: 0x35C, offset: 0x81A03, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC03getE4ByIdySo6UIViewCSSFTo', symObjAddr: 0x14D0, symBinAddr: 0x1000087B0, symSize: 0x68 }
+  - { offsetInCU: 0x38D, offset: 0x81A34, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC12getKeyWindowSo8UIWindowCSgyFZTo', symObjAddr: 0x18A4, symBinAddr: 0x100008B84, symSize: 0x14 }
+  - { offsetInCU: 0x3D6, offset: 0x81A7D, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC10initSharedyyFZTo', symObjAddr: 0x18D8, symBinAddr: 0x100008BB8, symSize: 0x4 }
+  - { offsetInCU: 0x3F6, offset: 0x81A9D, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC10initSharedyyFZTo', symObjAddr: 0x18D8, symBinAddr: 0x100008BB8, symSize: 0x4 }
+  - { offsetInCU: 0x423, offset: 0x81ACA, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC07presentcD3AppyypSgSo16UIViewControllerCSgFTo', symObjAddr: 0x1AD8, symBinAddr: 0x100008DB8, symSize: 0xEC }
+  - { offsetInCU: 0x455, offset: 0x81AFC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryCACycfcTo', symObjAddr: 0x1C28, symBinAddr: 0x100008F08, symSize: 0x68 }
+  - { offsetInCU: 0x490, offset: 0x81B37, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC10initSharedyyFZTf4d_n', symObjAddr: 0x2C04, symBinAddr: 0x100009EE4, symSize: 0x110 }
+  - { offsetInCU: 0x525, offset: 0x81BCC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC12getKeyWindowSo8UIWindowCSgyFZTf4d_n', symObjAddr: 0x304C, symBinAddr: 0x10000A32C, symSize: 0x15C }
+  - { offsetInCU: 0x6A1, offset: 0x81D48, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvpZ', symObjAddr: 0x13FD0, symBinAddr: 0x100A27FB0, symSize: 0x0 }
+  - { offsetInCU: 0x6D6, offset: 0x81D7D, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC10updateDataySo19NSMutableDictionaryCcSgvsTo', symObjAddr: 0x1E78, symBinAddr: 0x100009158, symSize: 0x94 }
+  - { offsetInCU: 0x773, offset: 0x81E1A, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC7nibName6bundleACSSSg_So8NSBundleCSgtcfcTo', symObjAddr: 0x20D0, symBinAddr: 0x1000093B0, symSize: 0xCC }
+  - { offsetInCU: 0x7E4, offset: 0x81E8B, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x2248, symBinAddr: 0x100009528, symSize: 0x5C }
+  - { offsetInCU: 0x860, offset: 0x81F07, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV7SwiftUI5SceneAadEP4body4BodyQzvgTW', symObjAddr: 0x548, symBinAddr: 0x100007828, symSize: 0xB4 }
+  - { offsetInCU: 0x893, offset: 0x81F3A, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0xB4, symBinAddr: 0x100007394, symSize: 0x40 }
+  - { offsetInCU: 0x8A7, offset: 0x81F4E, size: 0x8, addend: 0x0, symName: '_$s7SwiftUI15ModifiedContentVy9SimpleTip19NativeScriptAppViewVAA25_AppearanceActionModifierVGACyxq_GAA0J0A2aKRzAA0jM0R_rlWl', symObjAddr: 0x114, symBinAddr: 0x1000073F4, symSize: 0x6C }
+  - { offsetInCU: 0x8BB, offset: 0x81F62, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameAbstract, symObjAddr: 0x180, symBinAddr: 0x100007460, symSize: 0x44 }
+  - { offsetInCU: 0x8CF, offset: 0x81F76, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVAC7SwiftUI0F0AAWl', symObjAddr: 0x1C4, symBinAddr: 0x1000074A4, symSize: 0x44 }
+  - { offsetInCU: 0x8E3, offset: 0x81F8A, size: 0x8, addend: 0x0, symName: '_$s7SwiftUI11WindowGroupVyAA15ModifiedContentVy9SimpleTip19NativeScriptAppViewVAA25_AppearanceActionModifierVGGACyxGAA5SceneAAWl', symObjAddr: 0x208, symBinAddr: 0x1000074E8, symSize: 0x4C }
+  - { offsetInCU: 0x9AE, offset: 0x82055, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP04makeI07context0I4TypeQzAD0iJ7ContextVyxG_tFTW', symObjAddr: 0xA60, symBinAddr: 0x100007D40, symSize: 0x8 }
+  - { offsetInCU: 0x9CA, offset: 0x82071, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP06updateI0_7contexty0I4TypeQz_AD0iJ7ContextVyxGtFTW', symObjAddr: 0xA68, symBinAddr: 0x100007D48, symSize: 0x4 }
+  - { offsetInCU: 0x9E7, offset: 0x8208E, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x468, symBinAddr: 0x100007748, symSize: 0x2C }
+  - { offsetInCU: 0x9FF, offset: 0x820A6, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvau', symObjAddr: 0x53C, symBinAddr: 0x10000781C, symSize: 0xC }
+  - { offsetInCU: 0xA1D, offset: 0x820C4, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvpACTK', symObjAddr: 0x610, symBinAddr: 0x1000078F0, symSize: 0x50 }
+  - { offsetInCU: 0xA35, offset: 0x820DC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvpACTk', symObjAddr: 0x660, symBinAddr: 0x100007940, symSize: 0x64 }
+  - { offsetInCU: 0xAF9, offset: 0x821A0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvau', symObjAddr: 0xA50, symBinAddr: 0x100007D30, symSize: 0xC }
+  - { offsetInCU: 0xB17, offset: 0x821BE, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvpfi', symObjAddr: 0xE60, symBinAddr: 0x100008140, symSize: 0x8 }
+  - { offsetInCU: 0xB2F, offset: 0x821D6, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC11viewCreatorySScSgvpfi', symObjAddr: 0xFF8, symBinAddr: 0x1000082D8, symSize: 0xC }
+  - { offsetInCU: 0xB47, offset: 0x821EE, size: 0x8, addend: 0x0, symName: '_$sSSIegg_So8NSStringCIeyBy_TR', symObjAddr: 0x1034, symBinAddr: 0x100008314, symSize: 0x54 }
+  - { offsetInCU: 0xB5F, offset: 0x82206, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC13viewDestroyerySScSgvpfi', symObjAddr: 0x1178, symBinAddr: 0x100008458, symSize: 0xC }
+  - { offsetInCU: 0xD29, offset: 0x823D0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryCfETo', symObjAddr: 0x1C9C, symBinAddr: 0x100008F7C, symSize: 0x50 }
+  - { offsetInCU: 0xD58, offset: 0x823FF, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC10updateDataySo19NSMutableDictionaryCcSgvpfi', symObjAddr: 0x1CEC, symBinAddr: 0x100008FCC, symSize: 0xC }
+  - { offsetInCU: 0xD70, offset: 0x82417, size: 0x8, addend: 0x0, symName: '_$sSo19NSMutableDictionaryCIegg_ABIeyBy_TR', symObjAddr: 0x1E2C, symBinAddr: 0x10000910C, symSize: 0x4C }
+  - { offsetInCU: 0xD88, offset: 0x8242F, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlCfETo', symObjAddr: 0x22E0, symBinAddr: 0x1000095C0, symSize: 0x14 }
+  - { offsetInCU: 0xE4A, offset: 0x824F1, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCSo8UIWindowC_Tgm5', symObjAddr: 0x2464, symBinAddr: 0x100009744, symSize: 0x80 }
+  - { offsetInCU: 0xF22, offset: 0x825C9, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo8UIWindowC_Tgm5', symObjAddr: 0x2600, symBinAddr: 0x1000098E0, symSize: 0x64 }
+  - { offsetInCU: 0xF9F, offset: 0x82646, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV10makeUIView7contextSo0H0C7SwiftUI0H20RepresentableContextVyACG_tFyyScMYccfU_TA', symObjAddr: 0x2D38, symBinAddr: 0x10000A018, symSize: 0x1B0 }
+  - { offsetInCU: 0x1017, offset: 0x826BE, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x2EE8, symBinAddr: 0x10000A1C8, symSize: 0x10 }
+  - { offsetInCU: 0x102B, offset: 0x826D2, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x2EF8, symBinAddr: 0x10000A1D8, symSize: 0x8 }
+  - { offsetInCU: 0x103F, offset: 0x826E6, size: 0x8, addend: 0x0, symName: '_$s8Dispatch0A13WorkItemFlagsVACs10SetAlgebraAAWl', symObjAddr: 0x2F00, symBinAddr: 0x10000A1E0, symSize: 0x48 }
+  - { offsetInCU: 0x1053, offset: 0x826FA, size: 0x8, addend: 0x0, symName: '_$sSay8Dispatch0A13WorkItemFlagsVGSayxGSTsWl', symObjAddr: 0x2F48, symBinAddr: 0x10000A228, symSize: 0x4C }
+  - { offsetInCU: 0x1067, offset: 0x8270E, size: 0x8, addend: 0x0, symName: '_$sSSIegg_SgWOy', symObjAddr: 0x2F94, symBinAddr: 0x10000A274, symSize: 0x10 }
+  - { offsetInCU: 0x107B, offset: 0x82722, size: 0x8, addend: 0x0, symName: '_$sSSIegg_SgWOe', symObjAddr: 0x2FA4, symBinAddr: 0x10000A284, symSize: 0x10 }
+  - { offsetInCU: 0x108F, offset: 0x82736, size: 0x8, addend: 0x0, symName: '_$sypSgWOb', symObjAddr: 0x2FB4, symBinAddr: 0x10000A294, symSize: 0x48 }
+  - { offsetInCU: 0x10A3, offset: 0x8274A, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x2FFC, symBinAddr: 0x10000A2DC, symSize: 0x40 }
+  - { offsetInCU: 0x10B7, offset: 0x8275E, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x303C, symBinAddr: 0x10000A31C, symSize: 0x10 }
+  - { offsetInCU: 0x11AF, offset: 0x82856, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlCMa', symObjAddr: 0x31A8, symBinAddr: 0x10000A488, symSize: 0x20 }
+  - { offsetInCU: 0x11C3, offset: 0x8286A, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryCMa', symObjAddr: 0x31C8, symBinAddr: 0x10000A4A8, symSize: 0x20 }
+  - { offsetInCU: 0x11D7, offset: 0x8287E, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV7SwiftUI5SceneAA4BodyAdEP_AGWT', symObjAddr: 0x31E8, symBinAddr: 0x10000A4C8, symSize: 0x10 }
+  - { offsetInCU: 0x11EB, offset: 0x82892, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAaD0F0PWb', symObjAddr: 0x31F8, symBinAddr: 0x10000A4D8, symSize: 0x4 }
+  - { offsetInCU: 0x11FF, offset: 0x828A6, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI0F0AA4BodyAdEP_AGWT', symObjAddr: 0x31FC, symBinAddr: 0x10000A4DC, symSize: 0xC }
+  - { offsetInCU: 0x1213, offset: 0x828BA, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowVMa', symObjAddr: 0x3208, symBinAddr: 0x10000A4E8, symSize: 0x10 }
+  - { offsetInCU: 0x1227, offset: 0x828CE, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwCP', symObjAddr: 0x3218, symBinAddr: 0x10000A4F8, symSize: 0x2C }
+  - { offsetInCU: 0x123B, offset: 0x828E2, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwxx', symObjAddr: 0x3244, symBinAddr: 0x10000A524, symSize: 0x8 }
+  - { offsetInCU: 0x124F, offset: 0x828F6, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwca', symObjAddr: 0x324C, symBinAddr: 0x10000A52C, symSize: 0x38 }
+  - { offsetInCU: 0x1263, offset: 0x8290A, size: 0x8, addend: 0x0, symName: ___swift_memcpy16_8, symObjAddr: 0x3284, symBinAddr: 0x10000A564, symSize: 0xC }
+  - { offsetInCU: 0x1277, offset: 0x8291E, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwta', symObjAddr: 0x3290, symBinAddr: 0x10000A570, symSize: 0x30 }
+  - { offsetInCU: 0x128B, offset: 0x82932, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwet', symObjAddr: 0x32C0, symBinAddr: 0x10000A5A0, symSize: 0x48 }
+  - { offsetInCU: 0x129F, offset: 0x82946, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVwst', symObjAddr: 0x3308, symBinAddr: 0x10000A5E8, symSize: 0x3C }
+  - { offsetInCU: 0x12B3, offset: 0x8295A, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVMa', symObjAddr: 0x3344, symBinAddr: 0x10000A624, symSize: 0x10 }
+  - { offsetInCU: 0x12D2, offset: 0x82979, size: 0x8, addend: 0x0, symName: '_$sSo19NSMutableDictionaryCIeyBy_ABIegg_TRTA', symObjAddr: 0x3358, symBinAddr: 0x10000A638, symSize: 0x10 }
+  - { offsetInCU: 0x12FB, offset: 0x829A2, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x3368, symBinAddr: 0x10000A648, symSize: 0x24 }
+  - { offsetInCU: 0x130F, offset: 0x829B6, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x338C, symBinAddr: 0x10000A66C, symSize: 0x20 }
+  - { offsetInCU: 0x132E, offset: 0x829D5, size: 0x8, addend: 0x0, symName: '_$sSo13UIWindowSceneCSgytIegnr_ACIegg_TRTA', symObjAddr: 0x3410, symBinAddr: 0x10000A6F0, symSize: 0x44 }
+  - { offsetInCU: 0x1362, offset: 0x82A09, size: 0x8, addend: 0x0, symName: '_$sSo13UIWindowSceneCSgIegg_ACytIegnr_TRTA', symObjAddr: 0x3454, symBinAddr: 0x10000A734, symSize: 0x24 }
+  - { offsetInCU: 0x138B, offset: 0x82A32, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewVAC7SwiftUI19UIViewRepresentableAAWl', symObjAddr: 0x3478, symBinAddr: 0x10000A758, symSize: 0x44 }
+  - { offsetInCU: 0x139F, offset: 0x82A46, size: 0x8, addend: 0x0, symName: '_$sSo7UISceneCSo8NSObjectCSH10ObjectiveCWl', symObjAddr: 0x34BC, symBinAddr: 0x10000A79C, symSize: 0x58 }
+  - { offsetInCU: 0x13B3, offset: 0x82A5A, size: 0x8, addend: 0x0, symName: '_$sSh8IteratorV8_VariantOyx__GSHRzlWOe', symObjAddr: 0x354C, symBinAddr: 0x10000A82C, symSize: 0x8 }
+  - { offsetInCU: 0x13C7, offset: 0x82A6E, size: 0x8, addend: 0x0, symName: '_$sSh5IndexV8_VariantOyx__GSHRzlWOe', symObjAddr: 0x3554, symBinAddr: 0x10000A834, symSize: 0xC }
+  - { offsetInCU: 0x13DB, offset: 0x82A82, size: 0x8, addend: 0x0, symName: '_$sSh5IndexV8_VariantOyx__GSHRzlWOy', symObjAddr: 0x3560, symBinAddr: 0x10000A840, symSize: 0xC }
+  - { offsetInCU: 0x152E, offset: 0x82BD5, size: 0x8, addend: 0x0, symName: '_$sSTsE10compactMapySayqd__Gqd__Sg7ElementQzKXEKlFShySo7UISceneCG_So8UIWindowCTg5055$s9SimpleTip23NativeScriptViewFactoryC12getKeyWindowSo8e11CSgyFZAGSo7D6CXEfU_Tf1cn_n', symObjAddr: 0x153C, symBinAddr: 0x10000881C, symSize: 0x368 }
+  - { offsetInCU: 0x18CF, offset: 0x82F76, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV7SwiftUI5SceneAadEP05_makeI05scene6inputsAD01_I7OutputsVAD11_GraphValueVyxG_AD01_I6InputsVtFZTW', symObjAddr: 0x5FC, symBinAddr: 0x1000078DC, symSize: 0x14 }
+  - { offsetInCU: 0x18F1, offset: 0x82F98, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP09dismantleI0_11coordinatory0I4TypeQz_11CoordinatorQztFZTW', symObjAddr: 0xA6C, symBinAddr: 0x100007D4C, symSize: 0x4 }
+  - { offsetInCU: 0x190D, offset: 0x82FB4, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP15makeCoordinator0L0QzyFTW', symObjAddr: 0xA70, symBinAddr: 0x100007D50, symSize: 0x4 }
+  - { offsetInCU: 0x1929, offset: 0x82FD0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP011_identifiedF4Tree2inAD011_IdentifiedfL0O0I4TypeQz_tFTW', symObjAddr: 0xA74, symBinAddr: 0x100007D54, symSize: 0x4 }
+  - { offsetInCU: 0x1945, offset: 0x82FEC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP12sizeThatFits_02uiF07contextSo6CGSizeVSgAD08ProposedF4SizeV_0I4TypeQzAD0iJ7ContextVyxGtFTW', symObjAddr: 0xA78, symBinAddr: 0x100007D58, symSize: 0x30 }
+  - { offsetInCU: 0x1961, offset: 0x83008, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP21_overrideSizeThatFits_2in02uiF0ySo6CGSizeVz_AD09_ProposedL0V0I4TypeQztFTW', symObjAddr: 0xAA8, symBinAddr: 0x100007D88, symSize: 0x4 }
+  - { offsetInCU: 0x197D, offset: 0x83024, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP21_overrideLayoutTraits_3foryAD01_lM0Vz_0I4TypeQztFTW', symObjAddr: 0xAAC, symBinAddr: 0x100007D8C, symSize: 0x4 }
+  - { offsetInCU: 0x1999, offset: 0x83040, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP014_modifyBridgedF6InputsyyAD01_fM0VzFZTW', symObjAddr: 0xAB0, symBinAddr: 0x100007D90, symSize: 0x14 }
+  - { offsetInCU: 0x19B5, offset: 0x8305C, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI19UIViewRepresentableAadEP14_layoutOptionsyAD09_Platformfj6LayoutL0V0I4TypeQzFZTW', symObjAddr: 0xAC4, symBinAddr: 0x100007DA4, symSize: 0x14 }
+  - { offsetInCU: 0x19D1, offset: 0x83078, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI0F0AadEP05_makeF04view6inputsAD01_F7OutputsVAD11_GraphValueVyxG_AD01_F6InputsVtFZTW', symObjAddr: 0xAD8, symBinAddr: 0x100007DB8, symSize: 0x50 }
+  - { offsetInCU: 0x19ED, offset: 0x83094, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI0F0AadEP05_makeF4List4view6inputsAD01_fJ7OutputsVAD11_GraphValueVyxG_AD01_fJ6InputsVtFZTW', symObjAddr: 0xB28, symBinAddr: 0x100007E08, symSize: 0x50 }
+  - { offsetInCU: 0x1A09, offset: 0x830B0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI0F0AadEP14_viewListCount6inputsSiSgAD01_fjK6InputsV_tFZTW', symObjAddr: 0xB78, symBinAddr: 0x100007E58, symSize: 0x18 }
+  - { offsetInCU: 0x1A25, offset: 0x830CC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV7SwiftUI0F0AadEP4body4BodyQzvgTW', symObjAddr: 0xB90, symBinAddr: 0x100007E70, symSize: 0x24 }
+  - { offsetInCU: 0x1C83, offset: 0x8332A, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV4bodyQrvg', symObjAddr: 0x0, symBinAddr: 0x1000072E0, symSize: 0xB4 }
+  - { offsetInCU: 0x1C9E, offset: 0x83345, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV4bodyQrvg7SwiftUI4ViewPAEE8onAppear7performQryycSg_tFQOyAA0cd3AppJ0V_Qo_yXEfU_', symObjAddr: 0xF4, symBinAddr: 0x1000073D4, symSize: 0x20 }
+  - { offsetInCU: 0x1CC9, offset: 0x83370, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV4bodyQrvg7SwiftUI4ViewPAEE8onAppear7performQryycSg_tFQOyAA0cd3AppJ0V_Qo_yXEfU_ySo13UIWindowSceneCSgcfU_', symObjAddr: 0x254, symBinAddr: 0x100007534, symSize: 0x5C }
+  - { offsetInCU: 0x1D09, offset: 0x833B0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV4bodyQrvg7SwiftUI4ViewPAEE8onAppear7performQryycSg_tFQOyAA0cd3AppJ0V_Qo_yXEfU_yycfU0_', symObjAddr: 0x2B4, symBinAddr: 0x100007594, symSize: 0x190 }
+  - { offsetInCU: 0x1D4E, offset: 0x833F5, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowV4bodyQrvg7SwiftUI4ViewPAEE8onAppear7performQryycSg_tFQOyAA0cd3AppJ0V_Qo_yXEfU_yycfU0_yyScMYccfU_', symObjAddr: 0x444, symBinAddr: 0x100007724, symSize: 0x24 }
+  - { offsetInCU: 0x1D7C, offset: 0x83423, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundACySo13UIWindowSceneCSgc_tcfC', symObjAddr: 0x2B0, symBinAddr: 0x100007590, symSize: 0x4 }
+  - { offsetInCU: 0x1DE8, offset: 0x8348F, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip22NativeScriptMainWindowVACycfC', symObjAddr: 0x494, symBinAddr: 0x100007774, symSize: 0xA4 }
+  - { offsetInCU: 0x1E27, offset: 0x834CE, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC10initSharedyyFZ', symObjAddr: 0x538, symBinAddr: 0x100007818, symSize: 0x4 }
+  - { offsetInCU: 0x1E55, offset: 0x834FC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvg', symObjAddr: 0x6C4, symBinAddr: 0x1000079A4, symSize: 0x30 }
+  - { offsetInCU: 0x1E69, offset: 0x83510, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvs', symObjAddr: 0x6F4, symBinAddr: 0x1000079D4, symSize: 0x34 }
+  - { offsetInCU: 0x1E7D, offset: 0x83524, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvM', symObjAddr: 0x728, symBinAddr: 0x100007A08, symSize: 0x10 }
+  - { offsetInCU: 0x1E91, offset: 0x83538, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV5foundyySo13UIWindowSceneCSgcvM.resume.0', symObjAddr: 0x738, symBinAddr: 0x100007A18, symSize: 0x4 }
+  - { offsetInCU: 0x1EAC, offset: 0x83553, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV10makeUIView7contextSo0H0C7SwiftUI0H20RepresentableContextVyACG_tF', symObjAddr: 0x73C, symBinAddr: 0x100007A1C, symSize: 0x208 }
+  - { offsetInCU: 0x1FBA, offset: 0x83661, size: 0x8, addend: 0x0, symName: '_$sSlsE5first7ElementQzSgvgShySo7UISceneCG_Tg5', symObjAddr: 0x944, symBinAddr: 0x100007C24, symSize: 0x10C }
+  - { offsetInCU: 0x20A8, offset: 0x8374F, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19NativeScriptAppViewV12updateUIView_7contextySo0H0C_7SwiftUI0H20RepresentableContextVyACGtF', symObjAddr: 0xA5C, symBinAddr: 0x100007D3C, symSize: 0x4 }
+  - { offsetInCU: 0x20E1, offset: 0x83788, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvgZ', symObjAddr: 0xBB4, symBinAddr: 0x100007E94, symSize: 0x4C }
+  - { offsetInCU: 0x2115, offset: 0x837BC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvsZ', symObjAddr: 0xC44, symBinAddr: 0x100007F24, symSize: 0x4C }
+  - { offsetInCU: 0x2146, offset: 0x837ED, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC6sharedACSgvMZ', symObjAddr: 0xC9C, symBinAddr: 0x100007F7C, symSize: 0x40 }
+  - { offsetInCU: 0x2167, offset: 0x8380E, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvgZ', symObjAddr: 0xCDC, symBinAddr: 0x100007FBC, symSize: 0x4C }
+  - { offsetInCU: 0x2196, offset: 0x8383D, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvsZ', symObjAddr: 0xD6C, symBinAddr: 0x10000804C, symSize: 0x4C }
+  - { offsetInCU: 0x21C7, offset: 0x8386E, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC3appAA0cD13ContainerCtrlCSgvMZ', symObjAddr: 0xE20, symBinAddr: 0x100008100, symSize: 0x40 }
+  - { offsetInCU: 0x2202, offset: 0x838A9, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvg', symObjAddr: 0xEB0, symBinAddr: 0x100008190, symSize: 0x50 }
+  - { offsetInCU: 0x2246, offset: 0x838ED, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvs', symObjAddr: 0xF64, symBinAddr: 0x100008244, symSize: 0x50 }
+  - { offsetInCU: 0x226F, offset: 0x83916, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC5viewsSo19NSMutableDictionaryCSgvM', symObjAddr: 0xFB4, symBinAddr: 0x100008294, symSize: 0x44 }
+  - { offsetInCU: 0x22BF, offset: 0x83966, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC11viewCreatorySScSgvM', symObjAddr: 0x1130, symBinAddr: 0x100008410, symSize: 0x44 }
+  - { offsetInCU: 0x22E4, offset: 0x8398B, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC11viewCreatorySScSgvM.resume.0', symObjAddr: 0x1174, symBinAddr: 0x100008454, symSize: 0x4 }
+  - { offsetInCU: 0x2325, offset: 0x839CC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC13viewDestroyerySScSgvM', symObjAddr: 0x125C, symBinAddr: 0x10000853C, symSize: 0x44 }
+  - { offsetInCU: 0x234A, offset: 0x839F1, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC03getE4ByIdySo6UIViewCSSF', symObjAddr: 0x12A0, symBinAddr: 0x100008580, symSize: 0x230 }
+  - { offsetInCU: 0x23E6, offset: 0x83A8D, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC12getKeyWindowSo8UIWindowCSgyFZ', symObjAddr: 0x1538, symBinAddr: 0x100008818, symSize: 0x4 }
+  - { offsetInCU: 0x24CE, offset: 0x83B75, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryCACycfC', symObjAddr: 0x18B8, symBinAddr: 0x100008B98, symSize: 0x20 }
+  - { offsetInCU: 0x24E2, offset: 0x83B89, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryC07presentcD3AppyypSgSo16UIViewControllerCSgF', symObjAddr: 0x18DC, symBinAddr: 0x100008BBC, symSize: 0x1FC }
+  - { offsetInCU: 0x25CF, offset: 0x83C76, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip23NativeScriptViewFactoryCACycfc', symObjAddr: 0x1BC4, symBinAddr: 0x100008EA4, symSize: 0x64 }
+  - { offsetInCU: 0x2633, offset: 0x83CDA, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC10updateDataySo19NSMutableDictionaryCcSgvM', symObjAddr: 0x1F7C, symBinAddr: 0x10000925C, symSize: 0x44 }
+  - { offsetInCU: 0x265E, offset: 0x83D05, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC7nibName6bundleACSSSg_So8NSBundleCSgtcfC', symObjAddr: 0x1FC0, symBinAddr: 0x1000092A0, symSize: 0x7C }
+  - { offsetInCU: 0x2672, offset: 0x83D19, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC7nibName6bundleACSSSg_So8NSBundleCSgtcfc', symObjAddr: 0x203C, symBinAddr: 0x10000931C, symSize: 0x94 }
+  - { offsetInCU: 0x26D7, offset: 0x83D7E, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC5coderACSgSo7NSCoderC_tcfC', symObjAddr: 0x219C, symBinAddr: 0x10000947C, symSize: 0x44 }
+  - { offsetInCU: 0x26EB, offset: 0x83D92, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip25NativeScriptContainerCtrlC5coderACSgSo7NSCoderC_tcfc', symObjAddr: 0x21E0, symBinAddr: 0x1000094C0, symSize: 0x68 }
+  - { offsetInCU: 0x2762, offset: 0x83E09, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSo8UIWindowC_Tg5', symObjAddr: 0x22F4, symBinAddr: 0x1000095D4, symSize: 0x170 }
+  - { offsetInCU: 0x28CE, offset: 0x83F75, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtFSo8UIWindowC_Tg5', symObjAddr: 0x24E4, symBinAddr: 0x1000097C4, symSize: 0x11C }
+  - { offsetInCU: 0x29D2, offset: 0x84079, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSo8UIWindowC_Tg5', symObjAddr: 0x2664, symBinAddr: 0x100009944, symSize: 0x1F4 }
+  - { offsetInCU: 0x2A36, offset: 0x840DD, size: 0x8, addend: 0x0, symName: '_$sShyxSh5IndexVyx_GcigSo7UISceneC_Tg5', symObjAddr: 0x2858, symBinAddr: 0x100009B38, symSize: 0x2FC }
+  - { offsetInCU: 0x2ACB, offset: 0x84172, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV10startIndexSh0D0Vyx_GvgSo7UISceneC_Tg5', symObjAddr: 0x2B54, symBinAddr: 0x100009E34, symSize: 0xB0 }
+  - { offsetInCU: 0x9B, offset: 0x8432E, size: 0x8, addend: 0x0, symName: '_$sSo8NSObjectCMa', symObjAddr: 0x1C, symBinAddr: 0x10000A8B8, symSize: 0x3C }
+  - { offsetInCU: 0xF1, offset: 0x84384, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ColorResourceVSHAASQWb', symObjAddr: 0x470, symBinAddr: 0x10000AD0C, symSize: 0x4 }
+  - { offsetInCU: 0x105, offset: 0x84398, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ColorResourceVACSQAAWl', symObjAddr: 0x474, symBinAddr: 0x10000AD10, symSize: 0x44 }
+  - { offsetInCU: 0x119, offset: 0x843AC, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ImageResourceVSHAASQWb', symObjAddr: 0x4B8, symBinAddr: 0x10000AD54, symSize: 0x4 }
+  - { offsetInCU: 0x12D, offset: 0x843C0, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ImageResourceVACSQAAWl', symObjAddr: 0x4BC, symBinAddr: 0x10000AD58, symSize: 0x44 }
+  - { offsetInCU: 0x141, offset: 0x843D4, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19ResourceBundleClass33_18C2FFC52B3C312016D13E516FB5109FLLCMa', symObjAddr: 0x500, symBinAddr: 0x10000AD9C, symSize: 0x20 }
+  - { offsetInCU: 0x155, offset: 0x843E8, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ColorResourceVwxx', symObjAddr: 0x524, symBinAddr: 0x10000ADC0, symSize: 0x28 }
+  - { offsetInCU: 0x169, offset: 0x843FC, size: 0x8, addend: 0x0, symName: ___swift_memcpy24_8, symObjAddr: 0x554, symBinAddr: 0x10000ADF0, symSize: 0x14 }
+  - { offsetInCU: 0x17D, offset: 0x84410, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ColorResourceVMa', symObjAddr: 0x574, symBinAddr: 0x10000AE10, symSize: 0x10 }
+  - { offsetInCU: 0x191, offset: 0x84424, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ImageResourceVMa', symObjAddr: 0x708, symBinAddr: 0x10000AFA4, symSize: 0x10 }
+  - { offsetInCU: 0x2AE, offset: 0x84541, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip19ResourceBundleClass33_18C2FFC52B3C312016D13E516FB5109FLLCfD', symObjAddr: 0x0, symBinAddr: 0x10000A89C, symSize: 0x10 }
+  - { offsetInCU: 0x2DF, offset: 0x84572, size: 0x8, addend: 0x0, symName: '_$s9SimpleTip13ColorResourceV4name6bundleACSS_So8NSBundleCtcfC', symObjAddr: 0x10, symBinAddr: 0x10000A8AC, symSize: 0x4 }
+  - { offsetInCU: 0x328, offset: 0x845BB, size: 0x8, addend: 0x0, symName: '_$s7SwiftUI5ColorV9SimpleTipEyAcD0C8ResourceVcfC', symObjAddr: 0x468, symBinAddr: 0x10000AD04, symSize: 0x4 }
+  - { offsetInCU: 0x35F, offset: 0x845F2, size: 0x8, addend: 0x0, symName: '_$s7SwiftUI5ImageV9SimpleTipEyAcD0C8ResourceVcfC', symObjAddr: 0x46C, symBinAddr: 0x10000AD08, symSize: 0x4 }
+...

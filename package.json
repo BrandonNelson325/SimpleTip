@@ -7,7 +7,8 @@
     "@nativescript/core": "~8.8.0"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "^1.0.14",
+    "@nativescript/ios": "8.8.2",
+    "@nativescript/preview-cli": "1.0.14",
     "@nativescript/stackblitz": "^0.0.8",
     "@nativescript/tailwind": "^2.1.0",
     "@nativescript/types-minimal": "~8.8.0",
