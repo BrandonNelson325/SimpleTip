@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "SimpleTip",
+    "slug": "simple-tip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "simpletip",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.simpletip.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000000"
+      },
+      "package": "com.simpletip.app"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
