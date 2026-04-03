@@ -1,36 +1,46 @@
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { Stack } from "expo-router";
 import Slider from "@react-native-community/slider";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Keypad } from "@/components/Keypad";
 import { TipPresets } from "@/components/TipPresets";
+import { InputModeToggle } from "@/components/InputModeToggle";
+import { CameraScanner } from "@/components/CameraScanner";
+import { AdBanner } from "@/components/AdBanner";
+import { InterstitialAdPlaceholder } from "@/components/InterstitialAdPlaceholder";
 
 export default function TipCalculator() {
   const [billAmount, setBillAmount] = useState("");
   const [tipPercentage, setTipPercentage] = useState(18);
+  const [inputMode, setInputMode] = useState<"keypad" | "camera">("keypad");
+  const [showInterstitial, setShowInterstitial] = useState(false);
+  const interstitialShownRef = useRef(false);
 
   const bill = parseFloat(billAmount) || 0;
   const tipAmount = bill * (tipPercentage / 100);
   const totalAmount = bill + tipAmount;
   const displayBill = billAmount ? `$${billAmount}` : "$0.00";
 
+  // Interstitial timer: 7s after first non-zero bill, once per session
+  useEffect(() => {
+    if (bill > 0 && !interstitialShownRef.current) {
+      const timeout = setTimeout(() => {
+        setShowInterstitial(true);
+        interstitialShownRef.current = true;
+      }, 7000);
+      return () => clearTimeout(timeout);
+    }
+  }, [bill]);
+
   const handleKeyPress = useCallback((key: string) => {
     setBillAmount((prev) => {
-      // No multiple decimal points
       if (key === "." && prev.includes(".")) return prev;
-
-      // Max 2 decimal places
       if (prev.includes(".")) {
         const [, decimal] = prev.split(".");
         if (decimal && decimal.length >= 2) return prev;
       }
-
-      // Max 8 characters
       if (prev.length >= 8) return prev;
-
-      // No leading zeros except before decimal
       if (prev === "0" && key !== ".") return key;
-
       return prev + key;
     });
   }, []);
@@ -48,6 +58,15 @@ export default function TipCalculator() {
     setTipPercentage(Math.round(value));
   }, []);
 
+  const handleAmountDetected = useCallback((amount: string) => {
+    setBillAmount(amount);
+    setInputMode("keypad");
+  }, []);
+
+  const handleDismissInterstitial = useCallback(() => {
+    setShowInterstitial(false);
+  }, []);
+
   return (
     <>
       <Stack.Screen
@@ -56,6 +75,9 @@ export default function TipCalculator() {
         }}
       />
       <View className="flex-1 bg-black">
+        {/* Input Mode Toggle */}
+        <InputModeToggle mode={inputMode} onModeChange={setInputMode} />
+
         <ScrollView className="flex-1 p-4">
           {/* Header with Clear button */}
           <View className="flex-row justify-between items-center mb-1">
@@ -110,12 +132,22 @@ export default function TipCalculator() {
           </View>
         </ScrollView>
 
-        {/* Keypad */}
-        <Keypad onKeyPress={handleKeyPress} onBackspace={handleBackspace} />
+        {/* Keypad or Camera */}
+        {inputMode === "keypad" ? (
+          <Keypad onKeyPress={handleKeyPress} onBackspace={handleBackspace} />
+        ) : (
+          <CameraScanner onAmountDetected={handleAmountDetected} />
+        )}
 
-        {/* Ad Space */}
-        <View className="bg-gray-900 h-16" />
+        {/* Banner Ad */}
+        <AdBanner />
       </View>
+
+      {/* Interstitial Ad */}
+      <InterstitialAdPlaceholder
+        visible={showInterstitial}
+        onDismiss={handleDismissInterstitial}
+      />
     </>
   );
 }
