@@ -19,7 +19,13 @@
     },
     "plugins": [
       "expo-router",
-      "expo-asset"
+      "expo-asset",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SimpleTip needs camera access to scan your bill."
+        }
+      ]
     ]
   }
 }
