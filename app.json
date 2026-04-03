@@ -16,7 +16,11 @@
       "adaptiveIcon": {
         "backgroundColor": "#000000"
       },
-      "package": "com.simpletip.app"
+      "package": "com.simpletip.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -26,7 +30,14 @@
         {
           "cameraPermission": "SimpleTip needs camera access to scan your bill."
         }
-      ]
-    ]
+      ],
+      ["./plugins/withMinimumDeploymentTarget", "16.0"]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "23775844-fc6a-46bf-aa2e-1cc465859975"
+      }
+    }
   }
 }
