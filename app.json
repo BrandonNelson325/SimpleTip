@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CamTip",
-    "slug": "camtip",
+    "slug": "simple-tip",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
@@ -12,7 +12,13 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.camtip.app",
       "deploymentTarget": "16.0",
-      "buildNumber": "2"
+      "buildNumber": "4",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4471669474742212~7511704873"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -36,13 +42,22 @@
       [
         "./plugins/withMinimumDeploymentTarget",
         "16.0"
-      ]
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-4471669474742212~7511704873"
+        }
+      ],
+      "react-native-iap"
     ],
     "extra": {
       "router": {},
       "eas": {
         "projectId": "23775844-fc6a-46bf-aa2e-1cc465859975"
       }
-    }
+    },
+    "owner": "brandonnelson325"
   }
 }
