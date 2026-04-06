@@ -1,32 +1,32 @@
 import {
   initConnection,
   endConnection,
-  getProducts,
+  fetchProducts,
   requestPurchase,
   getAvailablePurchases,
   finishTransaction,
   purchaseUpdatedListener,
   purchaseErrorListener,
-  type ProductPurchase,
+  type Purchase,
   type PurchaseError,
-  type Subscription,
+  type EventSubscription,
 } from "react-native-iap";
 import { Platform } from "react-native";
 
 const PRODUCT_ID = "com.camtip.removeads";
 
-let purchaseUpdateSubscription: Subscription | null = null;
-let purchaseErrorSubscription: Subscription | null = null;
+let purchaseUpdateSubscription: EventSubscription | null = null;
+let purchaseErrorSubscription: EventSubscription | null = null;
 
 export const initIAP = async (
   onPurchaseSuccess: () => void
 ): Promise<void> => {
   try {
     await initConnection();
-    await getProducts({ skus: [PRODUCT_ID] });
+    await fetchProducts({ skus: [PRODUCT_ID] });
 
     purchaseUpdateSubscription = purchaseUpdatedListener(
-      async (purchase: ProductPurchase) => {
+      async (purchase: Purchase) => {
         if (purchase.productId === PRODUCT_ID) {
           await finishTransaction({ purchase });
           onPurchaseSuccess();
@@ -46,7 +46,17 @@ export const initIAP = async (
 
 export const purchaseRemoveAds = async (): Promise<void> => {
   try {
-    await requestPurchase({ sku: PRODUCT_ID });
+    if (Platform.OS === "ios") {
+      await requestPurchase({
+        request: { apple: { sku: PRODUCT_ID } },
+        type: "in-app",
+      });
+    } else {
+      await requestPurchase({
+        request: { google: { skus: [PRODUCT_ID] } },
+        type: "in-app",
+      });
+    }
   } catch (error) {
     console.log("Purchase error:", error);
   }
