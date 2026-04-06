@@ -1,4 +1,4 @@
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { Alert, Pressable, ScrollView, Text, View } from "react-native";
 import { Stack } from "expo-router";
 import Slider from "@react-native-community/slider";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -7,14 +7,15 @@ import { TipPresets } from "@/components/TipPresets";
 import { InputModeToggle } from "@/components/InputModeToggle";
 import { CameraScanner } from "@/components/CameraScanner";
 import { AdBanner } from "@/components/AdBanner";
-import { InterstitialAdPlaceholder } from "@/components/InterstitialAdPlaceholder";
+import { useAdState } from "@/lib/adState";
+import { showInterstitialAd } from "@/lib/admob";
 
 export default function TipCalculator() {
   const [billAmount, setBillAmount] = useState("");
   const [tipPercentage, setTipPercentage] = useState(18);
   const [inputMode, setInputMode] = useState<"keypad" | "camera">("camera");
-  const [showInterstitial, setShowInterstitial] = useState(false);
   const interstitialShownRef = useRef(false);
+  const { isAdFree, purchaseRemoveAds, restorePurchases } = useAdState();
 
   const bill = parseFloat(billAmount) || 0;
   const tipAmount = bill * (tipPercentage / 100);
@@ -23,14 +24,14 @@ export default function TipCalculator() {
 
   // Interstitial timer: 7s after first non-zero bill, once per session
   useEffect(() => {
-    if (bill > 0 && !interstitialShownRef.current) {
+    if (bill > 0 && !interstitialShownRef.current && !isAdFree) {
       const timeout = setTimeout(() => {
-        setShowInterstitial(true);
+        showInterstitialAd();
         interstitialShownRef.current = true;
       }, 7000);
       return () => clearTimeout(timeout);
     }
-  }, [bill]);
+  }, [bill, isAdFree]);
 
   const handleKeyPress = useCallback((key: string) => {
     setBillAmount((prev) => {
@@ -63,9 +64,21 @@ export default function TipCalculator() {
     setInputMode("keypad");
   }, []);
 
-  const handleDismissInterstitial = useCallback(() => {
-    setShowInterstitial(false);
-  }, []);
+  const handleRemoveAds = useCallback(async () => {
+    try {
+      await purchaseRemoveAds();
+    } catch {
+      Alert.alert("Error", "Unable to complete purchase. Please try again.");
+    }
+  }, [purchaseRemoveAds]);
+
+  const handleRestore = useCallback(async () => {
+    try {
+      await restorePurchases();
+    } catch {
+      Alert.alert("Error", "Unable to restore purchases. Please try again.");
+    }
+  }, [restorePurchases]);
 
   return (
     <>
@@ -130,6 +143,23 @@ export default function TipCalculator() {
               </Text>
             </View>
           </View>
+
+          {/* Remove Ads / Restore */}
+          {!isAdFree && (
+            <View className="flex-row justify-center items-center mt-4 gap-4">
+              <Pressable onPress={handleRemoveAds}>
+                <Text className="text-purple-400 text-sm underline">
+                  Remove Ads ($0.99)
+                </Text>
+              </Pressable>
+              <Text className="text-gray-600">|</Text>
+              <Pressable onPress={handleRestore}>
+                <Text className="text-gray-500 text-sm underline">
+                  Restore Purchase
+                </Text>
+              </Pressable>
+            </View>
+          )}
         </ScrollView>
 
         {/* Keypad or Camera */}
@@ -142,12 +172,6 @@ export default function TipCalculator() {
         {/* Banner Ad */}
         <AdBanner />
       </View>
-
-      {/* Interstitial Ad */}
-      <InterstitialAdPlaceholder
-        visible={showInterstitial}
-        onDismiss={handleDismissInterstitial}
-      />
     </>
   );
 }
