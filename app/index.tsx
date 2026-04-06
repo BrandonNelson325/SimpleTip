@@ -12,7 +12,7 @@ import { InterstitialAdPlaceholder } from "@/components/InterstitialAdPlaceholde
 export default function TipCalculator() {
   const [billAmount, setBillAmount] = useState("");
   const [tipPercentage, setTipPercentage] = useState(18);
-  const [inputMode, setInputMode] = useState<"keypad" | "camera">("keypad");
+  const [inputMode, setInputMode] = useState<"keypad" | "camera">("camera");
   const [showInterstitial, setShowInterstitial] = useState(false);
   const interstitialShownRef = useRef(false);
 
@@ -71,7 +71,7 @@ export default function TipCalculator() {
     <>
       <Stack.Screen
         options={{
-          title: "Simple Tip",
+          title: "CamTip",
         }}
       />
       <View className="flex-1 bg-black">

@@ -1,22 +1,23 @@
 {
   "expo": {
-    "name": "SimpleTip",
-    "slug": "simple-tip",
+    "name": "CamTip",
+    "slug": "camtip",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "scheme": "simpletip",
+    "scheme": "camtip",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.simpletip.app",
-      "deploymentTarget": "16.0"
+      "bundleIdentifier": "com.camtip.app",
+      "deploymentTarget": "16.0",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#000000"
       },
-      "package": "com.simpletip.app",
+      "package": "com.camtip.app",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
@@ -28,10 +29,13 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "SimpleTip needs camera access to scan your bill."
+          "cameraPermission": "CamTip needs camera access to scan your bill."
         }
       ],
-      ["./plugins/withMinimumDeploymentTarget", "16.0"]
+      [
+        "./plugins/withMinimumDeploymentTarget",
+        "16.0"
+      ]
     ],
     "extra": {
       "router": {},
