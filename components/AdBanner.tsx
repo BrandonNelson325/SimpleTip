@@ -1,12 +1,17 @@
-import { Text, View } from "react-native";
+import { BannerAd, BannerAdSize, getBannerAdUnitId } from "@/lib/admob";
+import { useAdState } from "@/lib/adState";
 
 export function AdBanner() {
+  const { isAdFree } = useAdState();
+
+  if (isAdFree) return null;
+
   return (
-    <View
-      className="bg-gray-900 items-center justify-center"
-      style={{ height: 50 }}
-    >
-      <Text className="text-gray-600 text-xs">Ad</Text>
-    </View>
+    <BannerAd
+      unitId={getBannerAdUnitId()}
+      size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+      requestOptions={{ requestNonPersonalizedAdsOnly: false }}
+      onAdFailedToLoad={(error: any) => console.log("Banner error:", error)}
+    />
   );
 }
