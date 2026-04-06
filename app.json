@@ -7,12 +7,12 @@
     "userInterfaceStyle": "dark",
     "icon": "./assets/images/icon.png",
     "scheme": "camtip",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.camtip.app",
       "deploymentTarget": "16.0",
-      "buildNumber": "4",
+      "buildNumber": "5",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
