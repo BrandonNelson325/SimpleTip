@@ -25,7 +25,7 @@
     "nativewind": "4.1.23",
     "react": "19.0.0",
     "react-native": "0.79.6",
-    "react-native-google-mobile-ads": "^16.3.1",
+    "react-native-google-mobile-ads": "^15.8.3",
     "react-native-iap": "^14.7.20",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
