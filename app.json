@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CamTip",
-    "slug": "simple-tip",
+    "slug": "camtip",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
@@ -12,7 +12,7 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.camtip.app",
       "deploymentTarget": "16.0",
-      "buildNumber": "8",
+      "buildNumber": "10",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
@@ -54,7 +54,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "23775844-fc6a-46bf-aa2e-1cc465859975"
+        "projectId": "5ef78ca3-9ae0-41f3-b3e3-d3e5bc2083d5"
       }
     },
     "owner": "brandonnelson325"
