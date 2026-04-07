@@ -12,7 +12,7 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.camtip.app",
       "deploymentTarget": "16.0",
-      "buildNumber": "5",
+      "buildNumber": "8",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
@@ -49,8 +49,7 @@
           "androidAppId": "ca-app-pub-3940256099942544~3347511713",
           "iosAppId": "ca-app-pub-4471669474742212~7511704873"
         }
-      ],
-      "react-native-iap"
+      ]
     ],
     "extra": {
       "router": {},
